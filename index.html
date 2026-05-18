@@ -155,9 +155,6 @@
       --border-hover: rgba(245, 245, 245, 0.14);
      --font-display: 'poppins', sans-serif;
       --font-body: 'Poppins', sans-serif;
-      .nav-logo {
-      font-family: 'Hoobsstank Regular', sans-serif !important;
-    }
       
     *,
     *::before,
@@ -270,18 +267,16 @@
       border-bottom-color: var(--border);
     }
 
-   .nav-logo {
-      font-family: 'hoobsstank-regular.otf', sans-serif;
-      font-size: 1.35rem;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      color: var(--white);
-      text-decoration: none;
+ .nav-logo {
+      display: flex;
+      align-items: center;
       flex: 1;
     }
 
-    .nav-logo span {
-      color: var(--green);
+    .nav-logo img {
+      height: 35px; /* Ajuste esse número se quiser a logo maior ou menor */
+      width: auto;
+      display: block;
     }
     
     .nav-links {
@@ -2716,7 +2711,9 @@
      NAVBAR
      ============================================================ -->
   <nav class="navbar" id="navbar">
-    <a href="#" class="nav-logo">Vel<span>mont</span></a>
+    <a href="#" class="nav-logo">
+  <img src="logo nova-1.png" alt="Velmont Agency">
+</a>
     <ul class="nav-links">
       <li><a href="#servicos">Serviços</a></li>
       <li><a href="#diferenciais">Diferenciais</a></li>
